@@ -1,0 +1,61 @@
+$btn_color: #3AC0FF
+    
+body, html 
+    margin: 0
+    padding: 0
+
+h1 
+    text-align: center
+
+a
+    color: $btn_color 
+    &:hover
+        color: darken($btn_color, 20%)
+
+
+.create-task__form
+    text-align: center
+    margin-top: 200px
+    .fields
+        justify-content: center
+    input[name="text"]
+        width: 50% !important
+
+.login-page
+    .form
+        margin-top: 200px
+        display: flex
+        align-items: center
+        flex-direction: column
+    .field
+        width: 50%
+        text-align: center
+
+.header
+    justify-content: flex-end !important
+    &>div 
+        text-align: right
+        margin-right: 20px
+    .logout-link
+        color: $btn_color
+        cursor: pointer
+        &:hover
+            color: darken($btn_color, 20%) 
+
+.main-page
+    a
+        color: inherit
+        &:hover
+            color: #fff
+    button 
+        display: block !important
+        margin: 10px auto !important
+    &__btn
+        margin: 80px auto 40px !important
+        display: block !important
+    &__table
+        td, th
+            text-align: center !important
+
+.pagination__wrapper
+    text-align: center

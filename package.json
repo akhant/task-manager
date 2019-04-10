@@ -3,13 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.0.1",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "node-sass": "^4.11.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set SKIP_PREFLIGHT_CHECK=true&& react-scripts start",
+    "build": "set SKIP_PREFLIGHT_CHECK=true&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
